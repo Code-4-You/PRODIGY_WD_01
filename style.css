@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif; ;
+   scroll-behavior: smooth;
+   background-color: black;
+
+}
+
+
+.logo img{
+    width: 200px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 50px;
+    
+}
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style-type:none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 30%;
+    margin-right: 50px;
+}
+
+ul li a:hover{
+    /* text-decoration: underline 2px; */
+    /* text-underline-offset: 4px; */
+    background-color: rgb(8, 251, 97);
+    border-radius: 10px;
+    padding: 7px;
+    transition: 0.5s;
+}
+
+.hamburger{
+    font-size: 30px;
+    display: none;
+}
+
+@media screen and (max-width:1023px){
+    .hamburger{
+        display: flex;
+        cursor: pointer;
+    }
+
+    ul{
+        display: none;
+    }
+
+    ul.ham_active{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        /* background-color: #30363f; */
+        width: 100%;
+        gap: 15px;
+        padding: 10px;
+
+
+    }
+}
+
+/*    Content    */
+
+#container img{
+    width: 400px;
+    padding-top: 50px;
+}
+.web{
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,rgba(0,0,0,0.3));
+}
+
+#text p{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+button{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 7%;
+    align-items: center;
+}
+
+/*    Icon */
+#icon{
+width: 100%;
+margin-top: 100px;
+padding-left: 20px;
+}
+
+#icon img{
+width: 60px;
+margin-left: 10px;
+}
+#head{
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
