@@ -1,2 +1,3 @@
 # PRODIGY_WD_01
-Responsive Landing Page
+<h1>Responsive Landing Page </h1>
+I have made a responsive landing page using html, css and javascript.
